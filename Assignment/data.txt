@@ -1,0 +1,310 @@
+###1.WRITE A PYTHON PROGRAM FOR VARIOUS DATATYPES
+
+# variables with different data types
+num = 42                  # integer
+pi = 3.14159              # float
+name = "Brijesh Sajeev"       # string
+is_cool = True            # boolean
+grades = [90, 85, 95]     # list of integers
+
+# Print the values and data types of the variables
+print("num =", num, "  Type:", type(num))
+print("pi =", pi, "  Type:", type(pi))
+print("name =", name, "  Type:", type(name))
+print("is_cool =", is_cool, "  Type:", type(is_cool))
+print("grades =", grades, "  Type:", type(grades))
+
+# Manipulate the variables and print the results
+print("num + 5 =", num + 5)
+print("pi * 2 =", pi * 2)
+print("name + ' is awesome!' =", name + " is awesome!")
+print("not is_cool =", not is_cool)
+print("The first grade is", grades[0])
+print("The average grade is", sum(grades)/len(grades))
+
+    OUTPUT :
+        num = 42   Type: <class 'int'>
+        pi = 3.14159   Type: <class 'float'>
+        name = Brijesh Sajeev   Type: <class 'str'>
+        is_cool = True   Type: <class 'bool'>
+        grades = [90, 85, 95]   Type: <class 'list'>
+        num + 5 = 47
+        pi * 2 = 6.28318
+        name + ' is awesome!' = John Smith is awesome!
+        not is_cool = False
+        The first grade is 90
+        The average grade is 90.0
+
+###2. various operators in Python
+
+# Arithmetic operators
+num1 = 10
+num2 = 3
+print("num1 + num2 =", num1 + num2)
+print("num1 - num2 =", num1 - num2)
+print("num1 * num2 =", num1 * num2)
+print("num1 / num2 =", num1 / num2)
+print("num1 % num2 =", num1 % num2)
+print("num1 ** num2 =", num1 ** num2)
+
+# Comparison operators
+num3 = 5
+num4 = 7
+print("num3 == num4 is", num3 == num4)
+print("num3 != num4 is", num3 != num4)
+print("num3 < num4 is", num3 < num4)
+print("num3 > num4 is", num3 > num4)
+print("num3 <= num4 is", num3 <= num4)
+print("num3 >= num4 is", num3 >= num4)
+
+# Logical operators
+x = True
+y = False
+print("x and y is", x and y)
+print("x or y is", x or y)
+print("not x is", not x)
+
+# Assignment operators
+num5 = 10
+num5 += 2
+print("num5 =", num5)
+num5 -= 3
+print("num5 =", num5)
+num5 *= 5
+print("num5 =", num5)
+num5 /= 2
+print("num5 =", num5)
+num5 %= 4
+print("num5 =", num5)
+num5 **= 2
+print("num5 =", num5)
+
+# Identity operators
+lst1 = [1, 2, 3]
+lst2 = [1, 2, 3]
+lst3 = lst1
+print("lst1 is lst2 is", lst1 is lst2)
+print("lst1 is lst3 is", lst1 is lst3)
+print("lst1 is not lst2 is", lst1 is not lst2)
+
+# Membership operators
+lst4 = [4, 5, 6]
+print("4 in lst4 is", 4 in lst4)
+print("5 not in lst4 is", 5 not in lst4)
+print("6 in lst4 is", 6 in lst4)
+
+    #OUTPUT
+        num1 + num2 = 13
+        num1 - num2 = 7
+        num1 * num2 = 30
+        num1 / num2 = 3.3333333333333335
+        num1 % num2 = 1
+        num1 ** num2 = 1000
+        num3 == num4 is False
+        num3 != num4 is True
+        num3 < num4 is True
+        num3 > num4 is False
+        num3 <= num4 is True
+        num3 >= num4 is False
+
+        x and y is False
+        x or y is True
+        not x is False
+
+        num5 = 12
+        num5 = 9
+        num5 = 45
+        num5 = 22.5
+        num5 = 2.5
+        num5 = 6.25
+
+        lst1 is lst2 is False
+        lst1 is lst3 is True
+        lst1 is not lst2 is True
+        4 in lst4 is True
+        5 not in lst4 is True
+        6 in lst4 is True
+
+###3various decision-making statements in Python
+# Prompt the user to enter a number
+num = int(input("Enter a number: "))
+
+# Use if-else statement to check if the number is positive or negative
+if num > 0:
+    print("The number is positive.")
+elif num < 0:
+    print("The number is negative.")
+else:
+    print("The number is zero.")
+
+# Use if-else statement to check if the number is even or odd
+if num % 2 == 0:
+    print("The number is even.")
+else:
+    print("The number is odd.")
+
+# Use nested if statement to check if the number is divisible by 3 and 5
+if num % 3 == 0:
+    if num % 5 == 0:
+        print("The number is divisible by both 3 and 5.")
+    else:
+        print("The number is divisible by 3 but not by 5.")
+elif num % 5 == 0:
+    print("The number is divisible by 5 but not by 3.")
+else:
+    print("The number is not divisible by either 3 or 5.")
+
+#OUTPUT
+Enter a number: 42
+The number is positive.
+The number is even.
+The number is divisible by 3 but not by 5.
+
+Enter a number: -7
+The number is negative.
+The number is odd.
+The number is not divisible by either 3 or 5.
+
+Enter a number: 15
+The number is positive.
+The number is odd.
+The number is divisible by both 3 and 5.
+
+###4 LOOPING statements
+# Looping with for-in statement
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+# Looping with while statement
+num = 5
+while num > 0:
+    print(num)
+    num -= 1
+
+# Nested loops
+for i in range(1, 4):
+    for j in range(1, 4):
+        print(i * j, end=" ")
+    print()
+
+# Looping with break and continue statements
+num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+for num in num_list:
+    if num == 5:
+        break
+    if num % 2 == 0:
+        continue
+    print(num)
+
+    #OUTPUT
+        apple
+        banana
+        cherry
+        5
+        4
+        3
+        2
+        1
+        1 2 3 
+        2 4 6 
+        3 6 9 
+        1
+        3
+    
+###5 various kinds of Arguments of userdefined functions
+
+###6 Manipulating different types of libraray functions
+
+import math
+import random
+import string
+
+# Use math library functions
+x = 2
+print("The square root of", x, "is", math.sqrt(x))
+print("The value of pi is approximately", math.pi)
+
+# Use random library functions
+print("A random integer between 1 and 10 is", random.randint(1, 10))
+print("A random floating-point number between 0 and 1 is", random.random())
+
+# Use string library functions
+s = "Hello, World!"
+print("The length of the string", s, "is", len(s))
+print("The string in uppercase is", s.upper())
+print("The string split by comma is", s.split(","))
+
+# Use list library functions
+lst = [1, 2, 3, 4, 5]
+print("The sum of the list", lst, "is", sum(lst))
+print("The maximum value in the list", lst, "is", max(lst))
+lst.reverse()
+print("The list in reverse order is", lst)
+
+# Use dictionary library functions
+d = {"apple": 2, "banana": 4, "cherry": 6}
+print("The value of the key 'banana' in the dictionary is", d["banana"])
+print("The keys in the dictionary are", d.keys())
+print("The values in the dictionary are", d.values())
+
+    #OUTPUT
+        The square root of 2 is 1.4142135623730951
+        The value of pi is approximately 3.141592653589793
+        A random integer between 1 and 10 is 7
+        A random floating-point number between 0 and 1 is 0.9342374635064394
+        The length of the string Hello, World! is 13
+        The string in uppercase is HELLO, WORLD!
+        The string split by comma is ['Hello', ' World!']
+        The sum of the list [1, 2, 3, 4, 5] is 15
+        The maximum value in the list [1, 2, 3, 4, 5] is 5
+        The list in reverse order is [5, 4, 3, 2, 1]
+        The value of the key 'banana' in the dictionary is 4
+        The keys in the dictionary are dict_keys(['apple', 'banana', 'cherry'])
+        The values in the dictionary are dict_values([2, 4, 6])
+
+### 10 operations in file
+# Open a file for writing
+f = open("my_file.txt", "w")
+
+# Write some text to the file
+f.write("Hello, world!\n")
+f.write("This is a test file.\n")
+
+# Close the file
+f.close()
+
+# Open the file for reading
+f = open("my_file.txt", "r")
+
+# Read the entire contents of the file and print them
+contents = f.read()
+print(contents)
+
+# Close the file
+f.close()
+
+# Open the file for appending
+f = open("my_file.txt", "a")
+
+# Append some more text to the file
+f.write("This is another line.\n")
+
+# Close the file
+f.close()
+
+# Open the file for reading again
+f = open("my_file.txt", "r")
+
+# Read the entire contents of the file and print them again
+contents = f.read()
+print(contents)
+
+# Close the file
+f.close()
+
+# Remove the file
+import os
+os.remove("my_file.txt")
+
+
