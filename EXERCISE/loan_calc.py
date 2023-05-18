@@ -1,5 +1,7 @@
 from tkinter import *
 
+
+
 class MyGUI:
     def __init__(self):
         self.root=Tk()
@@ -15,7 +17,6 @@ class MyGUI:
         Entry(self.root,textvariable=self.noYear,justify=RIGHT).grid(row=2,column=2,sticky=E)
         self.loanAmt=StringVar()
         Entry(self.root,textvariable=self.loanAmt,justify=RIGHT).grid(row=3,column=2,sticky=E)
-        
         # Monthly payment
         self.monPay=StringVar()
         monLable=Label(self.root,textvariable=self.monPay).grid(row=4,column=2,sticky=E)
