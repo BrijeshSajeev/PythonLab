@@ -5,6 +5,8 @@ port=5002
 server=socket.socket()
 print(host)
 
+
+
 server.bind((host,port))
 server.listen(1)
 conn,addr=server.accept()
