@@ -8,6 +8,8 @@ import cv2
 
 from tkinter.filedialog import askopenfile
 
+
+
 def start():
     global image1,path
     global panel
@@ -27,7 +29,6 @@ def start():
     else:
         panel.configure(image=image)
         panel.image=image
-
 def gray_img():
     global panelB
     gray=cv2.cvtColor(image1,cv2.COLOR_BRG2GRAY)
@@ -40,7 +41,6 @@ def gray_img():
     else:
         panelB.configure(image=image)
         panelB.image=image
-
 def black_img():
     global panelB
     gray=cv2.cvtColor(image1,cv2.COLOR_BRG2GRAY)
@@ -54,7 +54,6 @@ def black_img():
     else:
         panelB.configure(image=image)
         panelB.image=image
-
 def negative_img():
     global panelB
     negative=cv2.cvtColor(image1,cv2.COLOR_BRG2GRAY)
