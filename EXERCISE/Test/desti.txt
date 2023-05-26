@@ -1,0 +1,11 @@
+In this example, the copy_text_file() function takes two arguments: source_file and destination_file, which represent the paths of the source and destination files, respectively.
+
+Inside the function, the open() function is used to open the source file in read mode ('r') and the destination file in write mode ('w'). The with statement ensures that the files are properly closed after reading and writing.
+
+The contents of the source file are read using source.read(), and then written to the destination file using destination.write(contents).
+
+The application includes error handling using try-except blocks. If the source file is not found, a FileNotFoundError is caught and an appropriate message is displayed. If any other error occurs during the file operations, it is caught and the error message is printed.
+
+Finally, an example usage is provided at the end, where you can specify the source and destination file paths as required.
+
+To use this application, replace 'source.txt' with the path of the text file you want to copy from, and 'destination.txt' with the path where you want to create the new copied file.
