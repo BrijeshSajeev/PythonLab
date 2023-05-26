@@ -1,8 +1,10 @@
 try:
-    infile = open("sample.txt", "r")
-    outfile = open("desti.txt", "w")
+    infile = open("desti.txt", "r")
+    outfile = open("sample.txt", "w")
     content = infile.read()
     outfile.write(content)
+
+
 except FileNotFoundError:
     print("File not found")
 except:
