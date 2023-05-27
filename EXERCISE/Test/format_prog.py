@@ -1,0 +1,7 @@
+print("%10.3e" % (635.08977))
+print(format(62, "6d"))
+print(format(62, "<9d"))
+print(format(63202, "7x"))
+print(int(7.5))
+print(int("02"))
+print(float("5.6"))
